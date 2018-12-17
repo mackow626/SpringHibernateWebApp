@@ -6,7 +6,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="SpringWeb" />
         </element>
-        <element id="dir-copy" path="C:\moje\SpringHibernateWebApp\src\main\java\WEB-INF" />
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: antlr:antlr:2.7.7" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />
@@ -68,7 +67,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:4.3.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:4.3.5.RELEASE" />
+          <element id="dir-copy" path="$PROJECT_DIR$/src/main/java/WEB-INF" />
         </element>
+        <element id="dir-copy" path="$PROJECT_DIR$/src/main/java/WEB-INF" />
       </element>
     </root>
   </artifact>

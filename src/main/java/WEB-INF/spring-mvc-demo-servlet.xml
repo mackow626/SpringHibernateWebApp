@@ -15,7 +15,8 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 <!-- Add support for component scanning -->
-<context:component-scan base-package="spring" />
+<context:component-scan base-package="app" />
+
 
 <!-- Add support for conversion, formatting and validation support -->
 <mvc:annotation-driven/>
@@ -32,7 +33,7 @@
 <bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
       destroy-method="close">
     <property name="driverClass" value="com.mysql.jdbc.Driver" />
-    <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/web_customer_tracker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false" />
+    <property name="jdbcUrl" value="jdbc:mysql://127.0.0.1:3306/web_customer_tracker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false&amp;allowPublicKeyRetrieval=true" />
     <property name="user" value="springstudent" />
     <property name="password" value="springstudent" />
 
@@ -47,7 +48,7 @@
 <bean id="sessionFactory"
       class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
     <property name="dataSource" ref="myDataSource" />
-    <property name="packagesToScan" value="hibernate" />
+    <property name="packagesToScan" value="app.entity" />
     <property name="hibernateProperties">
         <props>
             <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
@@ -66,9 +67,7 @@
 <tx:annotation-driven transaction-manager="myTransactionManager" />
 
 <!-- Add support for reading web resources: css, images, js, etc ... -->
-<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>
-
-
+<!--<mvc:resources location="/resources/" mapping="/resources/**"></mvc:resources>-->
 
 
 </beans>

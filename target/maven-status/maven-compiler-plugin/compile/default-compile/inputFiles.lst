@@ -1,2 +1,6 @@
-C:\mojeSpring\SpringHibernateWebApp\src\main\java\spring\CustomerController.java
-C:\mojeSpring\SpringHibernateWebApp\src\main\java\spring\DBtest.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\entity\Customer.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\spring\CustomerDAO.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\spring\DBtest.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\dao\sx.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\spring\CustomerDAOImpl.java
+C:\mojeSpring\SpringHibernateWebApp\src\main\java\app\spring\CustomerController.java

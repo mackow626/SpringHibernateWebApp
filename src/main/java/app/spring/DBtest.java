@@ -1,6 +1,4 @@
-package spring;
-
-import org.testng.annotations.Test;
+package app.spring;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -30,7 +28,7 @@ public class DBtest extends HttpServlet {
         String user = "springstudent";
         String pass = "springstudent";
 
-        String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/web_customer_tracker?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC&amp;useSSL=false";
+        String jdbcUrl = "jdbc:mysql://127.0.0.1:3306/web_customer_tracker?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true";
         String driver = "com.mysql.jdbc.Driver";
 
         // get connection to database
