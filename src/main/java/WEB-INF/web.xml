@@ -4,8 +4,11 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          id="WebApp_ID" version="3.1">
 
-    <display-name>app.spring-mvc-demo</display-name>
+    <display-name>spring-mvc-demo</display-name>
 
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
 
 
     <!-- Spring MVC Configs -->
@@ -29,7 +32,7 @@
 
 
     <!--<context-param>-->
-        <!--<param-name>contextConfigLocation</param-name>-->
-        <!--<param-value>WEB-INF/classes/dispatcher-servlet.xml</param-value>-->
+    <!--<param-name>contextConfigLocation</param-name>-->
+    <!--<param-value>WEB-INF/classes/dispatcher-servlet.xml</param-value>-->
     <!--</context-param>-->
 </web-app>
